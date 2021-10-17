@@ -9,6 +9,8 @@ colorama = "*"
 mysqlclient = "*"
 django-jazzmin = "*"
 djangocms-admin-style = "*"
+pillow = "*"
+django-ckeditor = "*"
 
 [dev-packages]
 
