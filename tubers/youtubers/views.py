@@ -52,4 +52,3 @@ def search(request):
 
     }
     return render(request, 'youtubers/search.html', data)
-    pass

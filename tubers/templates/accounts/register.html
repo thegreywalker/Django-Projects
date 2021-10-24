@@ -16,6 +16,7 @@
       <div class="col-md-6 ">
         <img src="{% static './assets/images/login-image.png' %}" class="img-fluid" alt="img">
       </div>
+      {% include 'messeges.html' %}
       <form method="POST" action="{% url 'register' %}"  class="col-md-5 offset-md-1">
       {% csrf_token %}
         <div class="form-group">
