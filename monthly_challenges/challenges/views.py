@@ -3,6 +3,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.urls import reverse
 
+
 # Create your views here.
 
 monthly_challenges = {
@@ -48,6 +49,9 @@ def monthly_challenge_by_number(request, month):
 
 def monthly_challenge(request, month):
     challenge_text = monthly_challenges[month]
-    return HttpResponse(challenge_text)
+    # return HttpResponse(challenge_text)
+    return render(request, 'challenges/challenge.html', {
+        "challenge_text": challenge_text
+    })
 
 
